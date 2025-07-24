@@ -1,0 +1,4 @@
+"#","Tool Name (UI Icon)","Internal API Type","Core Capability","Typical Latency","Cost Basis","Availability Tier"
+"1","Code Interpreter (“Analyze File” icon)","code_interpreter","Runs Python 3.11 in a sandbox; reads/writes files up to ≈500 MB; generates charts & docs","3 s–90 s","https://platform.openai.com/docs/assistants/tools/code-interpreter","Free, Plus, Pro, Team, Enterprise"
+"2","Web Search / Browsing (“Search” icon)","browser","Queries live web, fetches pages, cites sources","2 s–15 s","https://openai.com/index/introducing-chatgpt-search/","Free rollout in progress; already live for Plus & Team"
+"3","Image Generation (“Create Image” icon)","image_generate(GPT-4o native)","Produces & edits 1,024 × 1,024 px PNGs with alpha channel","45 s–90 s","https://www.cnet.com/tech/services-and-software/chatgpt-image-generation-is-now-free-for-everyone-heres-how-many-images-you-get/","Free*, Plus, Pro, Team, Enterprise"
