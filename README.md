@@ -46,3 +46,19 @@ Start the app:
 ```sh
 npm start
 ```
+
+## Segmentation Service
+
+We’re integrating Meta’s Segment Anything Model (SAM v2) via a cloud endpoint for room segmentation. Calling SAM through a Replicate cloud API lets us avoid bundling a large on‐device model and simplifies rollout. On‐device ONNX runtime is a future optimization to reduce latency and cost.
+
+### Environment Variables
+
+Add your Replicate API token to `.env`:
+```env
+REPLICATE_API_TOKEN=your_replicate_api_token
+```
+
+### How It Works
+
+- `src/services/SegmentationService.ts` exports `getRoomMask(imageUri: string): Promise<string>` which uploads the photo to the SAM v2 endpoint and returns a URL to the generated mask PNG.
+- In `src/screens/CaptureScreen.tsx`, after capturing a photo, we call `getRoomMask()` to fetch and overlay the segmentation mask for walls, floors, and large furniture.
