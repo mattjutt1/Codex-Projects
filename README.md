@@ -16,17 +16,33 @@ Users can point their device cameras at their living spaces and instantly previe
 - **Styling & Linting:** ESLint, Prettier
 - **Testing & CI:** Jest, React Native Testing Library, GitHub Actions
 
-## Getting Started
-1. Install dependencies:
-   ```sh
-   npm install
-   ```
-2. Start the Expo development server:
-   ```sh
-   npm start
-   ```
+## Installation
 
-## Next Steps
-- Run `expo init` with the `expo-template-blank-typescript` template if you haven't yet.
-- Integrate AR components and 3D asset pipeline.
-- Set up unit and integration tests.
+Clone the repository and install dependencies:
+```sh
+npm install
+```
+
+Install additional packages:
+```sh
+npm install @reduxjs/toolkit react-redux @react-navigation/native @react-navigation/native-stack @ui-kitten/components @eva-design/eva @ui-kitten/eva-icons dotenv
+expo install react-native-screens react-native-safe-area-context react-native-gesture-handler expo-camera expo-gl expo-gl-cpp expo-three react-native-svg
+```
+
+## Libraries Installed
+
+- **React Navigation** (v6) for navigation
+- **Redux Toolkit** & **React Redux** for state management
+- **UI Kitten** for UI components and theming
+- **expo-camera** for camera access
+- **expo-three** (with `expo-gl` & `expo-gl-cpp`) for AR support
+- **dotenv** for environment variable management
+
+## Usage
+
+Copy `.env.example` to `.env` and add any required keys.
+
+Start the app:
+```sh
+npm start
+```

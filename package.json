@@ -3,7 +3,29 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
     "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
     "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@react-navigation/native": "^6.1.6",
+    "@react-navigation/native-stack": "^6.9.12",
+    "@reduxjs/toolkit": "^1.9.5",
+    "react-redux": "^8.1.2",
+    "@ui-kitten/components": "^5.3.1",
+    "@eva-design/eva": "^2.0.0",
+    "@ui-kitten/eva-icons": "^5.3.1",
+    "dotenv": "^10.0.0",
+    "expo-camera": "~14.2.1",
+    "expo-gl": "~12.3.2",
+    "expo-gl-cpp": "~12.3.2",
+    "expo-three": "^7.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "17.0.39",
+    "@types/react-native": "0.66.13"
   }
 }
