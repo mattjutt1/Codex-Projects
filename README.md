@@ -4,6 +4,8 @@
 
 Users can point their device cameras at their living spaces and instantly preview virtual decorations—furniture, artwork, lighting effects—overlaid in real time, helping spark creativity and elevate mood.
 
+Note: Earlier versions of this repository included a separate `moodmakeover/` folder generated from the Expo template. That folder was unused and has been removed—the Expo project in this repository lives at the repository root.
+
 ## Goals
 - Enable AR-based “dopamine decor” to empower users to reimagine their environments
 - Provide a library of 3D assets and visual effects for mood-boosting transformations
